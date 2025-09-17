@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+ <meta name="viewport" content="width=device-width, initial=scale=1.0">
+ <title>Product Details</title>
+ <link rel="stylesheet" href="style.css">
+
+
+
+ <style>
+.sproduct {
+    width: 50%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+    
+
+
+.col-lg-6 {
+    width: 100%; 
+    margin-bottom: 20px; 
+    margin-top: 70px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+p{
+  color: rgb(26, 26, 26);
+}
+.img-fluid{
+    width: 50%;
+}
+.select-btn{
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px;
+  outline: 1px;
+  transition: 0.2s;
+
+}
+
+.cart-btn{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #030303;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+input{
+    height: 2.525rem;
+    padding: 0 1.25em;
+    font-size: 8;
+    width: 18%;
+    border: px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+}
+    .cart-btn:hover {
+      background:  #ff9100;
+    }
+ </style>
+
+
+</head> 
+<body>
+    <section id="header">
+        <h1>MoveGear</h1>
+        <a href=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-suitcase"></i></a></li>
+                <li><a href="profile.php"><i class="fa-solid fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+<section class="container sproduct my-5 pt-5">
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-12">
+            <img class="img-fluid w-100 pb-1" src="img/products/f4.jpg" id="MainImg" alt="">
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+            <h5>Home / Women</h5>
+            <h2>White Color Women Crop Top</h2> <br>
+            <h3>2750 LKR</h3> <br><br>
+      <select id="product-size" class="select-btn">
+          <option value="">Select Size</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+           <option value="XL">XL</option>
+       </select> <br><br>
+
+     <input type="number" id="product-qty" value="1" min="1">
+
+      <button class="cart-btn" onclick="addToCart('Men\'s Fashion T Shirt', 3750, 'MainImg')">
+         Add to Cart
+       </button> <br><br>
+<h4>Product Details</h4>
+            <p>Casual Wear
+Material : Polyester
+Material Composition : 95% Polyester, 5% Spandex
+Model Height 5' 5", wearing size UK 10 (Size Guide)
+
+Please bear in mind that the photo may be slightly different from the actual item in terms of color due to lighting conditions or the display used to view</p>
+        </div>
+    </div>
+</section>
+<br><br><br>
+<section>
+    <div id="topic"><h2>Related Products</h2> <br><br>
+     <h4>Best Offers</h4> 
+    </div>
+</section>
+
+<section id="product1" class="section-p1">
+
+    <div class="pro-container">
+         <div onclick="window.location.href='sproduct.html'" class="pro">
+         <img src="img/products/n1.jpg" alt="">
+            <div class="des">
+             <span>Blue Hero</span>
+              <h3>Healthy Water Bottle 1L</h3>
+               <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+                <h4>750 LKR</h4>
+            </div>
+          <a href="#"><i class="fa-solid fa-heart heart"></i></a>
+        </div>
+        <div class="pro">
+         <img src="img/products/n2.jpg" alt="">
+            <div class="des">
+             <span>Addidas</span>
+              <h3>Women crop Top and jean</h3>
+               <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+                <h4>4050 LKR</h4>
+            </div>
+          <a href="#"><i class="fa-solid fa-heart heart"></i></a>
+        </div>
+        <div class="pro">
+         <img src="img/products/n3.jpg" alt="">
+            <div class="des">
+             <span>Addidas</span>
+              <h3>Quatar Airways Jercey</h3>
+               <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+                <h4>2750 LKR</h4>
+            </div>
+          <a href="#"><i class="fa-solid fa-heart heart"></i></a>
+        </div>
+        <div class="pro">
+         <img src="img/products/n4.jpg" alt="">
+            <div class="des">
+             <span>moose</span>
+              <h3>WomenSport T shirt</h3>
+               <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+                <h4>1750 LKR</h4>
+            </div>
+          <a href="#"><i class="fa-solid fa-heart heart"></i></a>
+        </div>  
+    </div>
+
+</section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p>Address: NSBM Green University</p>
+            <p>Phone:0123456789 / +9409876543</p>
+            <p>Hours:9.00am -8.00pm, Mon- Sat</p> <br>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & COnditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">Favourite</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div>
+            <h1>MoveGear</h1>
+        </div>
+    </footer>
+     <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e417e634d8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
