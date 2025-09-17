@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
+    .cart-container { 
+        max-width: 900px; 
+        margin: 40px auto; 
+        background: #fff; 
+        padding: 25px;
+        border-radius: 10px; 
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    h2 { 
+        text-align: center; 
+        margin-bottom: 20px; }
+    table { 
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+    table th, table td { 
+        padding: 12px; 
+        text-align: center; 
+        border-bottom: 1px solid #ddd; 
+    }
+    table th { 
+        background: #111; 
+        color: #fff; }
+    img { 
+        width: 60px; 
+        border-radius: 6px; 
+    }
+    .btn { 
+        padding: 8px 14px; 
+        border: none; 
+        border-radius: 6px; 
+        cursor: pointer; 
+        font-size: 0.9rem; }
+    .remove-btn { 
+        background: #000000; 
+        color: #fff; }
+    .clear-btn { 
+        background: #000000; 
+        color: #ffffff; margin-top: 20px; }
+    .checkout-btn { 
+        background: #000000; 
+        color: #fff; 
+        margin-top: 20px; 
+    }
+    .clear-btn:hover {
+      background:  #ff1e00;
+    }
+    .checkout-btn:hover {
+      background:  #008116;
+    }
+    .remove-btn:hover {
+      background:  #414141;
+    }
+  
+    
+
+  </style>
+</head>
+
+<body onload="loadCart()">
+
+    <section id="header">
+        <h1>MoveGear</h1>
+        <a href=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-suitcase"></i></a></li>
+                <li><a href="profile.php"><i class="fa-solid fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+  <div class="cart-container">
+    <h2>Your Shopping Cart</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Size</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+    </table><br><br>
+
+    <h3>Total Price: <span id="total-price">0</span>.00 LKR</h3>
+
+    <button class="btn clear-btn" onclick="clearCart()">Clear Cart</button>
+    <button class="btn checkout-btn">Checkout</button>
+  </div> <br><br><br><br><br>
+  
+<footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p>Address: NSBM Green University</p>
+            <p>Phone:0123456789 / +9409876543</p>
+            <p>Hours:9.00am -8.00pm, Mon- Sat</p> <br>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & COnditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">Favourite</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div>
+            <h1>MoveGear</h1>
+        </div>
+    </footer>
+
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e417e634d8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
